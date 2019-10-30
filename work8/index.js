@@ -5,7 +5,7 @@ function calu(func){
     if(isNaN(num1) || isNaN(num2)){
         alert('请输入数字')
         return false
-    }njnjjjj
+    }
     result.value= func(num1,num2)
 }
 function add(num1,num2){
