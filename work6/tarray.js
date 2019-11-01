@@ -14,5 +14,4 @@ for(var i in arr){
 
     }
 }
-//显示提取后的数zu
 document.getElementById('transArray').innerHTML = newArr.toString()
