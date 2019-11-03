@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+  <script>
+      var password = prompt("请输入密码")
+      if (password == '123'){
+            alert('密码正确')
+      } else{
+          alert('密码错误')
+      }
+      function color(str){
+        document.body.style.backgroundColor = str
+      }
+  </script>
+<body>
+    <input type="button" value="设置红色" onclick="color('red')">
+    <input type="button" value="设置黄色" onclick="color('yellow')">
+    <input type="button" value="设置蓝色" onclick="color('blue')">
+    <input type="button" value="设置自定义颜色" onclick="color('#000000')">
+</body>
+</html>
