@@ -1,0 +1,159 @@
+{
+  "id": "d8f53d29-c2a1-4ddc-9fb0-d87ede815759",
+  "version": "2.0",
+  "name": "work9",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "86ec9156-d018-4174-9af7-3c6876e93eda",
+    "name": "裴波纳契数列",
+    "commands": [{
+      "id": "c3bc20ee-bf86-48ea-a796-bfe1785ccf8f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8780ff67-6418-4bab-b240-18119894bbe1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x550",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee7e180b-7603-4d5f-be44-056a48c8ed05",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=work9",
+      "targets": [
+        ["linkText=work9", "linkText"],
+        ["css=a:nth-child(22)", "css:finder"],
+        ["xpath=//a[contains(text(),'work9')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'work9/index.html')]", "xpath:href"],
+        ["xpath=//a[11]", "xpath:position"],
+        ["xpath=//a[contains(.,'work9')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "841962a4-b226-46f7-8cdf-bc982451f282",
+      "comment": "",
+      "command": "click",
+      "target": "id=order",
+      "targets": [
+        ["id=order", "id"],
+        ["css=#order", "css:finder"],
+        ["xpath=//input[@id='order']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66f27259-c507-431a-a4e7-d8840b8d5687",
+      "comment": "",
+      "command": "type",
+      "target": "id=order",
+      "targets": [
+        ["id=order", "id"],
+        ["css=#order", "css:finder"],
+        ["xpath=//input[@id='order']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "8"
+    }, {
+      "id": "56a0b2ab-bbc1-4c90-8f5c-99f4b198cb88",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(2)",
+      "targets": [
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='计算']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ab1ae92-3cae-41af-a9b9-dd1507583d54",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=Perbonacci",
+      "targets": [
+        ["id=Perbonacci", "id"],
+        ["css=#Perbonacci", "css:finder"],
+        ["xpath=//input[@id='Perbonacci']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "21"
+    }]
+  }, {
+    "id": "dd708f81-7670-4340-9e34-bafa432968c3",
+    "name": "三级联动",
+    "commands": [{
+      "id": "d9b7d384-4549-404c-bfeb-73bcc2f5314b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05975eee-9247-469c-a3fd-3b35122084bc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x550",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "acee7b2e-44dd-45af-80bd-661ef2d946b0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=work9",
+      "targets": [
+        ["linkText=work9", "linkText"],
+        ["css=a:nth-child(22)", "css:finder"],
+        ["xpath=//a[contains(text(),'work9')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'work9/index.html')]", "xpath:href"],
+        ["xpath=//a[11]", "xpath:position"],
+        ["xpath=//a[contains(.,'work9')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7afbf402-4163-4c71-a423-6ed8606112b3",
+      "comment": "",
+      "command": "click",
+      "target": "id=collegeSelect",
+      "targets": [
+        ["id=collegeSelect", "id"],
+        ["css=#collegeSelect", "css:finder"],
+        ["xpath=//select[@id='collegeSelect']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94974a9e-bb7d-4348-a2a6-a960020b5220",
+      "comment": "",
+      "command": "select",
+      "target": "id=collegeSelect",
+      "targets": [],
+      "value": "label=计算机与设计学院"
+    }, {
+      "id": "807ac753-3738-4895-8609-3f2fa7dda870",
+      "comment": "",
+      "command": "assertSelectedLabel",
+      "target": "id=classSelect",
+      "targets": [
+        ["id=classSelect", "id"],
+        ["css=#classSelect", "css:finder"],
+        ["xpath=//select[@id='classSelect']", "xpath:attributes"],
+        ["xpath=//select[3]", "xpath:position"]
+      ],
+      "value": "网络1901"
+    }]
+  }],
+  "suites": [{
+    "id": "177e454d-d517-457d-9240-bc57e1354f87",
+    "name": "work9任务测试",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["86ec9156-d018-4174-9af7-3c6876e93eda", "dd708f81-7670-4340-9e34-bafa432968c3"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
