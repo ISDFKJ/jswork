@@ -47,7 +47,7 @@
                 textarea: function (attr) {
                     return '<textarea ' + attr + '></textarea>';
                   }
-        }
+        }//嗯
     };
     window['FormBuilder'] = FormBuilder
 })(window);
