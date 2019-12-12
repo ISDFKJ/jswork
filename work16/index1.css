@@ -1,0 +1,11 @@
+#box {
+    position: absolute;
+    width:120px;
+    height:120px;
+    line-height: 120px;
+    text-align: center;
+    background: rgb(18, 131, 175);
+    color:#fff;
+    border-radius: 60px;
+    /*border-radius: 为元素添加圆角*/
+}
