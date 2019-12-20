@@ -12,6 +12,18 @@ app.post('/formBuilder',function(req,res){
 
 app.listen(8080,() => console.log('node express 服务器已启动，监听端口:8080'))
 
-const openDefaultBroser = function(url) {
+const openDefaultBrowser = function(url) {
     var exec = require('child_process').exec;
+    switch(process.platform) {
+        case "darwin":
+            exec('open'+ url);
+            break;
+        case "win32":
+            exec('start' + url);
+            break;
+        default:
+            exec('xdg-open',[url]);
+            
+    }
 }
+openDefaultBrowser('http://localhost:8080')
