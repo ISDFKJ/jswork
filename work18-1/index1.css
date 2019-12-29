@@ -57,4 +57,5 @@ body {
     top: 0;
     background-color: #38f;
     box-shadow: 1px 1px 1px #6bf;
+    transition: all 0.8s
 }
